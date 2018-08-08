@@ -1,12 +1,150 @@
-/*----------- Global Styles ------------*/
+@font-face
+  src: url(fonts/SFProDisplay-Black.ttf)
+  font-family: sfBlack
 
+@font-face
+  src: url(fonts/SFProDisplay-Bold.ttf)
+  font-family: sfBold
+
+@font-face
+  src: url(fonts/SFProDisplay-Semibold.ttf)
+  font-family: sfSemi
+
+@font-face
+  src: url(fonts/SFProDisplay-Heavy.ttf)
+  font-family: sfHeavy
+
+@font-face
+  src: url(fonts/SFProDisplay-Medium.ttf)
+  font-family: sfMed
+
+@font-face
+  src: url(fonts/SFProDisplay-Regular.ttf)
+  font-family: sfReg
+
+\:root
+  --purple: #540CFA
+  --purple2: #3C09B3
+
+/*----------- Global Styles ------------*/
 *
   margin: 0
   padding: 0
-  border: 0
   outline: 0
   font-size: 100%
   vertical-align: baseline
   background: transparent
   text-decoration: none
   list-style: none
+
+html
+  width: 100%
+  
+ 
+
+nav
+  display: flex
+  justify-content: space-evenly
+  align-items: baseline
+  padding-top: 20px
+  padding-bottom: 10px
+  background: white
+  box-shadow: 0px 11px 36px -22px rgba(219,219,219,1)
+  
+  .logo
+    font-family: sfHeavy
+    font-size: 20px
+    
+    span
+      color: var(--purple)
+  
+  ul
+    display: flex
+    
+    li
+      margin-left: 50px
+      font-family: sfSemi
+      font-size: 16px
+      
+      a
+        color: black
+
+  .login
+    display: flex
+    align-items: baseline
+    
+    a
+      margin-left: 20px
+      font-family: sfBold
+      font-size: 16px
+      color: black
+      
+    .get
+      background: var(--purple)
+      padding: 7px
+      color: white
+      font-family: sfMed
+      font-size: 14px
+      border-radius: 5px
+      box-shadow: 0px 12px 15px -14px rgba(83,12,250,1)
+
+.hero
+  
+  .bg1
+    position: absolute
+    top: 350px
+    left: -300px 
+  
+  .bg2
+    position: fixed
+    top: -200px
+    right: -500px
+    z-index: -1
+    
+  .bg3
+    width: 30%
+    position: fixed
+    top: 150px
+    right: 100px
+    
+  .rhero
+    margin: 80px 0 0 100px
+    width: 600px
+    
+    h1
+      font-family: sfBlack
+      font-size: 60px
+      margin-bottom: 40px
+      
+    p
+      font-family: sfReg
+      font-size: 21px
+      margin-bottom: 30px
+    
+    input
+      font-family: sfReg
+      font-size: 21px
+      padding: 5px
+      border: 1px
+      box-shadow: 0px 12px 15px -14px rgba(83,12,250,1)
+      padding-right: 13px
+      
+    button
+      padding: 10px
+      background: var(--purple)
+      color: white
+      border: 0
+      margin-left: -6px
+      margin-top: -5px
+      border-radius: 0 6px 6px 0
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
