@@ -39,9 +39,10 @@
 
 html
   width: 100%
+  width: 1000px
+  margin: 0 auto
   
- 
-
+  
 nav
   display: flex
   justify-content: space-evenly
@@ -93,17 +94,19 @@ nav
   .bg1
     position: absolute
     top: 350px
-    left: -300px 
+    left: -340px 
+    z-index: -1
   
   .bg2
-    position: fixed
+    position: absolute
     top: -200px
     right: -500px
     z-index: -1
     
+    
   .bg3
     width: 30%
-    position: fixed
+    position: absolute
     top: 150px
     right: 100px
     
@@ -113,7 +116,7 @@ nav
     
     h1
       font-family: sfBlack
-      font-size: 60px
+      font-size: 50px
       margin-bottom: 40px
       
     p
@@ -125,26 +128,313 @@ nav
       font-family: sfReg
       font-size: 21px
       padding: 5px
-      border: 1px
+      border: 0px
       box-shadow: 0px 12px 15px -14px rgba(83,12,250,1)
       padding-right: 13px
       
     button
       padding: 10px
       background: var(--purple)
+      font-family: sfMed
+      font-size: 18px
       color: white
       border: 0
       margin-left: -6px
       margin-top: -5px
       border-radius: 0 6px 6px 0
       
+.comp
+  margin-top: 130px
+  
+    
+  span
+    opacity: 0.3
+    font-size: 12px
+    font-family: sfHeavy
+    
+    
+  ul
+    display: flex
+    
+    
+    li
+      margin-right: 30px
+      margin-top: -18px
+      
+      
+.features
+  width: 900px
+  margin: 160px 0 0 100px
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  
+  h3
+    font-family: sfReg
+    font-size: 14px
+    opacity: 0.3
+    
+  h1
+    font-family: sfHeavy
+    font-size: 50px
+    margin: 20px 0 20px 0
+    
+  
+  p
+    font-family: sfReg
+    font-size: 21px
+    opacity: 0.7
+    
+  
+  
+  .extras
+    display: flex
+    align-items: baseline
+    justify-content: space-between
+    margin-top: 70px
+    width: 900px
+    
+    .extra1
+      width: 250px
+      
+      
+    p
+      font-size: 12px
+    
+      span
+        font-family: sfBold
+        
+    .sp
+      margin-top: 5px
+      margin-bottom: 10px
+      
+    a
+      font-family: sfBold
+      font-size: 12px
+      
+.shows
+  width: 1800px
+  margin: 80px 0 0 0
+
+    
+  ul
+    display: flex
+    justify-content: center;
+    align-items: baseline
+    margin-left: 50px
+    
+    img
+      width: 220px
+      height: 330px
+      position: relative
+      margin-right: 40px
+      Right: 100px
+      box-shadow: 10px 10px 39px -19px rgba(0,0,0,0.75)
+
+.showcase
+  display: flex
+  width: 1400px
+  overflow: hidden
+  
+      
+.sLeft
+  display: flex
+  flex-direction: column
+  margin: 160px 0 120px 110px
+  
+  h2
+    font-family: sfBold
+    font-size: 42px
+    margin-bottom: 20px
+    width: 450px
+    
+  .para   
+    font-family: sfReg
+    font-size: 18px
+    padding: 0 0 35px 0
+    
+  .s-items
+    display: flex
+    flex-direction: column
+    align-items: baseline 
+    
+    a
+      display: flex
+      align-items: flex-start
+      
+      
+    
+      img
+        margin-right: 16px
+      
+      p
+        font-family: sfSemi
+        
+  .s-item1 
+    border: 2px solid white
+    width: 340px
+    padding: 20px
+    border-radius: 8px
+    opacity: 0.5
+    
+  .s-item2,
+  .s-item3  
+    opacity: 0.5
+    border
+    width: 340px
+    padding: 20px  
+    
+  .s-item1:hover
+    box-shadow: 0px 12px 15px -14px rgba(83,12,250,1)
+    opacity: 1    
+    
+  .s-item2:hover
+    box-shadow: 0px 12px 15px -14px rgba(83,12,250,1)
+    opacity: 1  
+    
+  .s-item3:hover
+    box-shadow: 0px 12px 15px -14px rgba(83,12,250,1)
+    opacity: 1   
+    
+.sRight
+  display: flex
+  align-items: flex-start
+  padding-top: 90px
+  
+  .phone
+    position: relative
+    width: 300px
+    left: 80px
+    top: 100px
+    
+    
+  .screen
+    position: relative
+    right: 150px
+    width: 820px
+    z-index: -1
+    
+.testimonials
+  background: black
+  display: flex
+  justify-content: center;
+  margin: 150px 0 0 0
+  width: 1600px
+  height: 850px
+  z-index: 10
+  overflow: hidden 
+  
+  .testR
+    display: flex
+    flex-direction: column
+    color: white
+    margin: 200px 150px 0 0
+    width: 480px
+    
+    h3
+      font-family: sfReg
+      font-size: 18px
+      margin-bottom: 12px
+      
+    h2
+      font-family: sfBold
+      font-size: 42px
+      margin-bottom: 22px
+    
+    p
+      font-family: sfMed
+      font-size: 18px
+      margin-bottom: 26px 
+          
+    .readM
+      background: var(--purple)
+      width: 216px
+      height: 40px
+      text-align: center
+      padding-top: 15px
+      border-radius: 10px
+      color: white
+      text-align: center
+  
+  .test1
+    position: relative
+    bottom: 50px
+    right: 50px
+    
+  .test2
+    position: relative
+    top: 10px
+
+footer
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 150px 0 0 50px
+  text-align: center
+  
+  h3
+    font-family: sfReg
+    font-size: 18px
+    opacity: 0.5
+    margin-bottom: 30px
+    
+    
+  h1
+    font-family: sfBlack
+    font-size: 50px
+    margin-bottom: 30px
+    
+  p
+    font-family: sfReg
+    font-size: 22px
+    margin-bottom: 50px
+    
+  input
+      font-family: sfReg
+      font-size: 21px
+      padding: 5px
+      border: 0px
+      box-shadow: 0px 12px 15px -14px rgba(83,12,250,1)
+      padding-right: 13px
+      
+  button
+    padding: 10px
+    background: var(--purple)
+    font-family: sfMed
+    font-size: 18px
+    color: white
+    border: 0
+    margin-left: -6px
+    margin-top: -5px
+    border-radius: 0 6px 6px 0  
+    
+    
+  ul
+    display: flex
+    width: 120px
+    justify-content: space-between
+    margin: 120px 0 30px 0
+    
+    
+  .copy
+    font-family: sfReg
+    font-size: 16px
+    margin-bottom: 30px
+    opacity: 0.5
     
     
     
     
     
     
-    
-    
-    
-    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
