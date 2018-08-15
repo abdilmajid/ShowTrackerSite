@@ -36,13 +36,31 @@
   background: transparent
   text-decoration: none
   list-style: none
+  
 
 html
   width: 100%
-  width: 1000px
   margin: 0 auto
+  overflow-x: hidden
   
+.shapes
+  width: 100%
+  margin: 0 auto
+  position: absolute
+  overflow: hidden
+  z-index: -1
   
+  .shape1
+    position: relative
+    right: 250px
+    top: 50px
+    
+  .shape2
+    position: relative
+    left: 750px
+    bottom: 300px
+    
+    
 nav
   display: flex
   justify-content: space-evenly
@@ -55,6 +73,9 @@ nav
   .logo
     font-family: sfHeavy
     font-size: 20px
+    
+    p
+      color: black
     
     span
       color: var(--purple)
@@ -89,30 +110,32 @@ nav
       border-radius: 5px
       box-shadow: 0px 12px 15px -14px rgba(83,12,250,1)
 
+      
+/* Screen Size changes */ 
+@media (max-width: 700px)
+  .head-container nav ul li
+    margin-left: 20px
+  .shapes .shape1
+    display: none  
+  
+@media (max-width: 575px)
+  .head-container nav ul
+    display: none
+
+    
+@media (max-width: 400px)
+  .head-container nav ul
+    display: none
+  .head-container nav .login1
+    display: none
+      
 .hero
+  display: flex
+  justify-content: center
   
-  .bg1
-    position: absolute
-    top: 350px
-    left: -340px 
-    z-index: -1
-  
-  .bg2
-    position: absolute
-    top: -200px
-    right: -500px
-    z-index: -1
-    
-    
-  .bg3
-    width: 30%
-    position: absolute
-    top: 150px
-    right: 100px
-    
-  .rhero
-    margin: 80px 0 0 100px
-    width: 600px
+  .lhero
+    margin: 80px 0 0 10px
+    width: 700px
     
     h1
       font-family: sfBlack
@@ -120,6 +143,12 @@ nav
       margin-bottom: 40px
       
     p
+      font-family: sfReg
+      font-size: 21px
+      margin-bottom: 30px
+    
+    .pPhone
+      display: none
       font-family: sfReg
       font-size: 21px
       margin-bottom: 30px
@@ -143,28 +172,78 @@ nav
       margin-top: -5px
       border-radius: 0 6px 6px 0
       
+  .bg1
+    margin-top: 50px
+          
 .comp
   margin-top: 130px
-  
-    
+   
   span
     opacity: 0.3
     font-size: 12px
     font-family: sfHeavy
     
-    
   ul
     display: flex
-    
     
     li
       margin-right: 30px
       margin-top: -18px
+
       
-      
+/* Screen Size changes */     
+@media (max-width: 1369px)
+  .hero .lhero 
+      margin: 80px 0 0 180px
+    
+@media (max-width: 1030px)
+  .hero .bg1
+    display: none
+ 
+@media (max-width: 700px) 
+  .hero .lhero
+    margin: 70px 0 20px 35px
+  .hero .comp 
+    margin-top: 60px
+  .hero .comp p
+    margin: 10px 0 25px 0  
+    
+@media (max-width: 510px)
+  .hero .lhero h1
+    font-size: 36px
+  .hero .lhero p
+    font-size: 16px
+    margin: -20px 0 20px 0 
+  .hero .lhero form input 
+    padding-right: 0px
+    font-size: 16px
+  .hero .lhero form button
+    padding: 5px
+    font-size: 16px
+  .hero .comp p
+    margin: 0 0 25px 0
+    
+@media (max-width: 400px)    
+  .head-container .hero
+    flex-direction: column
+  .hero
+    display: block
+    margin-top: -50px 
+  .hero .lhero
+    display: flex
+    flex-direction: column
+    width: 375px
+    margin: 90px 0 20px 15px
+  .hero .comp li
+    margin-right: 20px
+    
+@media (min-width: 400px)
+  .hero .bg2
+    display: none
+
+  
 .features
-  width: 900px
-  margin: 160px 0 0 100px
+  margin: 100px 0 0 100px
   display: flex
   flex-direction: column
   align-items: center
@@ -185,9 +264,7 @@ nav
     font-family: sfReg
     font-size: 21px
     opacity: 0.7
-    
-  
-  
+        
   .extras
     display: flex
     align-items: baseline
@@ -212,31 +289,71 @@ nav
     a
       font-family: sfBold
       font-size: 12px
-      
-.shows
-  width: 1800px
-  margin: 80px 0 0 0
+    
+/* Screen Size changes */       
+@media (max-width: 1030px)
+  .features .extras 
+    display: flex
+    flex-direction: column
+    align-items: center
+  .extra1
+    margin-bottom: 40px
+ 
+@media (max-width: 700px)
+  .features
+    margin: 70px 0 0 10px
+    align-items: flex-start
+    text-align: left  
+  .features .extras
+    align-items: flex-start
+  .features .extra1
+    margin-left: 1px 
+    margin-right: 0
+  .features h1
+    font-size: 36px
+  .features p 
+    font-size: 16px
 
+@media (max-width: 450px)    
+  .features h1
+    font-size: 32px
+  .features p 
+    font-size: 13px  
+  
+@media (max-width: 400px) 
+  .features
+    margin: 10px 0 0 10px
+    
+.shows
+  margin: 80px 0 0 0
     
   ul
     display: flex
     justify-content: center;
     align-items: baseline
-    margin-left: 50px
+    overflow: hidden
+    position: relative
     
     img
       width: 220px
       height: 330px
       position: relative
-      margin-right: 40px
-      Right: 100px
+      margin-right: 20px
+      Right: 150px
       box-shadow: 10px 10px 39px -19px rgba(0,0,0,0.75)
+      
+/* Screen Size changes */
+@media (max-width: 510px)
+  .shows
+    margin: 40px 0 0 0
+  .shows ul img
+    width: 180px
+    height: 270px
+    
 
 .showcase
   display: flex
-  width: 1400px
-  overflow: hidden
-  
+  justify-content: center
       
 .sLeft
   display: flex
@@ -264,7 +381,6 @@ nav
       align-items: flex-start
       
       
-    
       img
         margin-right: 16px
       
@@ -311,17 +427,47 @@ nav
     
   .screen
     position: relative
-    right: 150px
+    right: 80px
     width: 820px
     z-index: -1
+    
+    
+/* Screen Size changes */     
+@media (max-width: 1469px)   
+  .showcase .sRight
+    display: none
+  .showcase .sLeft
+    margin: 100px 0 10px 110px
+
+@media (max-width: 610px)     
+  .showcase .sLeft
+    margin: 45px 0 0 5px
+    
+@media (max-width: 460px)
+  .showcase .sLeft
+    margin: 45px 0 0 85px
+  .showcase .sLeft h2
+    font-size: 28px
+  .showcase .sLeft .para
+    font-size: 14px
+    margin-bottom: -15px
+  .showcase .sLeft .s-item1
+    width: 250px
+    font-size: 16px
+  .showcase .sLeft .s-item2 
+    width: 250px
+    font-size: 16px
+  .showcase .sLeft .s-item3
+    width: 250px
+    font-size: 16px
+  
     
 .testimonials
   background: black
   display: flex
   justify-content: center;
   margin: 150px 0 0 0
-  width: 1600px
-  height: 850px
+  height: 800px
   z-index: 10
   overflow: hidden 
   
@@ -366,11 +512,47 @@ nav
     position: relative
     top: 10px
 
+.extratest .test3
+  visibility: hidden
+
+/* Screen Size changes */     
+@media (max-width: 1150px)    
+  .testimonials .test2
+    display: none
+  .testimonials .testR  
+    margin-left: 15px
+    
+@media (max-width: 875px)
+  .testimonials .test1
+    display: none
+  .testimonials .testR
+    margin: 80px -50px 0 0
+  .extratest .test3
+    visibility: visible
+    position: relative
+    bottom: 290px
+    left: -210px
+    z-index: 1
+    
+@media (max-width: 700px)
+  .testimonials
+    margin: 50px 0 0 0
+    
+@media (max-width: 460px)
+  .testimonials
+    height: 700px
+  .testimonials .testR
+    margin-left: 10px
+  .testimonials .testR h2
+    font-size: 32px
+  .testimonials .testR p
+    font-size: 15px
+    
 footer
   display: flex
   flex-direction: column
   align-items: center
-  margin: 150px 0 0 50px
+  margin: -130px 0 0 50px
   text-align: center
   
   h3
@@ -423,12 +605,30 @@ footer
     margin-bottom: 30px
     opacity: 0.5
     
-    
-    
-    
-    
-    
+@media (max-width: 700px)
+  footer
+    margin: -130px 0 0 0
+  footer h1
+    font-size: 42px
+  footer p
+    font-size: 18px
+
+@media (max-width: 500px)    
+  footer h1
+    font-size: 32px
+  footer p
+    font-size: 13px  
+  footer input
+    font-size: 16px
+    padding: 5px
+    border: 0px
+    padding-right: 3px
   
+/* 
+  background: #000 !important
+  color: #0f0 !important
+  outline: solid #f00 1px !important
+ 
   
   
   

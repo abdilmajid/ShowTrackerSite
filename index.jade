@@ -6,22 +6,22 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     link(href="styles.css", rel="stylesheet", type="text/css")
   header
-    div.head-container
+    div.shapes
+      img(src="images/Rectangle 6.png", alt="background").shape1
+      img(src="images/Group 3.png", alt="background").shape2
+    div.head-container  
       nav
-        div.logo: p Show
+        div.logo: a(href="#"): p Show
                     span Trackr
         ul 
-          li: a(href="#") Features
-          li: a(href="#") Community
-          li: a(href="#") Get Started
+          li: a(href="#features") Features
+          li: a(href="#community") Community
+          li: a(href="#footer") Get Started
         div.login
-          a(href="#"): p Log In
+          a(href="#").login1: p Log In
           a(href="#").get: p Get Started
       div.hero
-        img(src="images/Rectangle 6.png", alt="background shape").bg1
-        img(src="images/Group 3.png", alt="background shape").bg2
-        img(src="images/iphone-x-mockup.png", alt="iphone").bg3
-        div.rhero
+        div.lhero
           h1 Track your shows automatically
           p With ShowTrackr you can track your favorite TV <br> shows automatically, so you never loose track of your <br>TV shows ever again.🍿
           form(action="#", method="post")
@@ -34,10 +34,12 @@ html(lang="en")
              li: img(src="images/apple.png", alt="apple logo")
              li: img(src="images/android.png", alt="android logo")
              li: img(src="images/windows.png", alt="windows logo")
-             li: img(src="images/synology.png", alt="synology logo")
+             li: img(src="images/synology.png", alt="synology logo") 
+        img(src="images/iphone-x-mockup.png", alt="iphone").bg1
+        img(src="images/iphone-x-mockup.png", alt="iphone").bg2
   main
     div.main-container
-      div.features
+      div.features#features
         h3 Features
         h1 Built and customized <br>for your habit
         p ShowTrackr's buil-in machine leatning and context-aware features <br>guarantee that all the notification and recommendations are always <br>delivered to you in the perfect moment.
@@ -66,6 +68,9 @@ html(lang="en")
           li: img(src="images/Rectangle 7 Copy 4.png", alt="movie poster")
           li: img(src="images/Rectangle 7 Copy 5.png", alt="movie poster")
           li: img(src="images/Rectangle 7 Copy 6.png", alt="movie poster")
+          li: img(src="images/chuck1.jpg", alt="movie poster")
+          li: img(src="images/Rectangle 7.png", alt="movie poster")
+          li: img(src="images/vikings.jpg", alt="movie poster")
       div.showcase
         div.sLeft
           h2 Easy-to-use interface<br> on every platform
@@ -86,7 +91,7 @@ html(lang="en")
         div.sRight
           img(src="images/iphone-x-mockup.png", alt="iphone").phone
           img(src="images/Group 13.png", alt="screen").screen
-      div.testimonials
+      div.testimonials#community
         div.testR
           h3 Community
           h2 We belive in the power<br> of community
@@ -95,7 +100,9 @@ html(lang="en")
         div.testL
           img(src="images/Testimonials1.png", alt="testimonials").test1
           img(src="images/Testimonials2.png", alt="testimonials").test2
-  footer
+    div.extratest
+        img(src="images/Testimonials3.png", alt="testimonials").test3
+  footer#footer
     h3 Get Started
     h1 Start tracking your TV<br> shows for free
     p In order to start tracking your TV shows, all you have to do is enter<br> your email address. Everything else will be taken care of by us. All<br> you have to do is sit back, relax and enjoy your TV shows.
