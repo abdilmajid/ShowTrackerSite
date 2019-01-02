@@ -14,7 +14,7 @@
 
 # **Synopsis**
 
-In this project I coded a free [**Sketch/AdobeXd**](https://dribbble.com/shots/4420134-Landing-Page-Template) design from [dribble.com](https://dribbble.com). The site is a for a show tracking app.
+In this project I coded a free [**Sketch/AdobeXd**](https://dribbble.com/shots/4420134-Landing-Page-Template) design from [dribble.com](https://dribbble.com). The design is for a TV/Movie tracking app.
 
 
 # **Tools Used** 
